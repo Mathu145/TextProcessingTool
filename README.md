@@ -1,14 +1,22 @@
 # Text Processing Tool
 
-## Beschreibung
-Ein Tool zur Verarbeitung von Textdateien basierend auf der Microkernel-Architektur.
+## Overview
+A simple text processing tool using the microkernel architecture.
 
-## Nutzung
-1. Textdatei bereitstellen.
-2. Ein Plugin auswählen.
-3. Verarbeiteten Text speichern.
+## Features
+- Core functionality for reading, processing, and saving text files.
+- Plugin support for extended functionality:
+  - Word Counter: Counts the number of words in the text.
+  - Case Converter: Converts text to uppercase.
+  - Text Search: Searches for and counts occurrences of a keyword.
 
-## Plugins
-- Word Counter: Zählt Wörter im Text.
-- Case Converter: Wandelt den Text in Großbuchstaben um.
-- Text Search: Sucht nach einem Schlüsselwort.
+## Usage
+1. Run `main.py`.
+2. Provide the path to a text file.
+3. Select a plugin to process the text.
+4. Save the processed text to a new file.
+
+## Structure
+- `core/`: Contains the core system.
+- `plugins/`: Contains individual plugins.
+- `main.py`: Entry point for the application.
