@@ -27,3 +27,21 @@ class Core:
         else:
             print(f"Plugin '{plugin_name}' nicht gefunden.")
             return text
+class Core:
+    # (Bestehender Code bleibt gleich)
+
+    def read_file(self, file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                return file.read()
+        except Exception as e:
+            print(f"Fehler beim Lesen der Datei: {e}")
+            return ""
+
+    def write_file(self, file_path, text):
+        try:
+            with open(file_path, "w", encoding="utf-8") as file:
+                file.write(text)
+                print(f"Text erfolgreich in {file_path} gespeichert.")
+        except Exception as e:
+            print(f"Fehler beim Speichern der Datei: {e}")
