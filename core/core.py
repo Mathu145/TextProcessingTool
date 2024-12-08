@@ -2,7 +2,7 @@ import os
 
 class Core:
     """
-    Core module for handling plugins and basic text processing functionality.
+    Core module to manage plugins and handle basic text processing tasks.
     """
 
     def __init__(self):
@@ -12,14 +12,13 @@ class Core:
     def load_plugins(self):
         """
         Dynamically loads plugins from the 'plugins' directory.
-        Each plugin must follow the naming convention <plugin_name>.py and define a class 'Plugin'.
+        Each plugin must define a 'Plugin' class.
         """
         plugin_dir = os.path.join(os.path.dirname(__file__), "../plugins")
-        for filename in os.listdir(plugin_dir):
-            if filename.endswith(".py") and filename != "__init__.py":
-                plugin_name = filename[:-3]
+        for file in os.listdir(plugin_dir):
+            if file.endswith(".py") and file != "__init__.py":
+                plugin_name = file[:-3]
                 try:
-                    # Dynamically import the plugin
                     module = __import__(f"plugins.{plugin_name}", fromlist=["Plugin"])
                     plugin_class = getattr(module, "Plugin")
                     self.plugins[plugin_name] = plugin_class()
@@ -43,6 +42,7 @@ class Core:
         else:
             print(f"Plugin '{plugin_name}' not found.")
             return text
+
     def read_file(self, file_path):
         """
         Reads text from a given file path.

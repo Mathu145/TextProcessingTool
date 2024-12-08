@@ -1,7 +1,8 @@
 class Plugin:
     """
-    Example plugin that serves as a template for other plugins.
+    Template plugin to demonstrate the plugin interface.
     """
+
     def process(self, text):
-        # This is a placeholder method. Actual plugins will implement their logic here.
+        # Placeholder logic for demonstration
         return text
