@@ -1,4 +1,62 @@
-This document is a critical overview of software design principles.
-It highlights key aspects of maintainability and scalability.
-Focusing on critical areas ensures a robust architecture.
-The summary should capture essential information for decision-making.
+Group Assignment 2: Proof of Concept for a Text Processing Tool Using Microkernel Architecture
+
+Overview
+In this assignment, your group will implement a proof of concept for a text processing tool using the microkernel architecture. The core of your system will handle basic operations like reading and writing text files, while plugins will extend this functionality by providing additional processing capabilities.
+
+The goal is to experiment with the microkernel architecture style, try out different design choices, and understand the trade-offs involved in this architectural approach.
+
+Objectives
+- Implement a simple microkernel-based application as a proof of concept.
+- Create a core module that performs essential tasks.
+- Design and implement multiple plugins to extend the functionality of the core.
+- Understand the trade-offs and practical aspects of the microkernel architecture through hands-on experience.
+
+Tasks
+1. Core Module Implementation (Mandatory)
+The core module must:
+ - Read text from a file and write processed text back to a file.
+ - Provide a simple mechanism for users to select which plugin to apply to the text.
+ - Load and manage plugins dynamically, ensuring the core remains functional even if no plugins are available.
+
+Minimum Requirements:
+ - Support for loading text files.
+ - Ability to select and apply one or more plugins to the text.
+ - Save the processed text to a new file.
+
+2. Plugin Development (Mandatory)
+Develop at least three plugins. These plugins should implement different text processing tasks, such as (be creative invent three on your own):
+ - Word Counter: Counts the number of words in the text.
+ - Text Search: Searches for a specific word or phrase and highlights its occurrences.
+ - Case Converter: Converts the text to uppercase, lowercase, or capitalizes each word.
+ 
+Advanced Groups: Consider implementing more complex plugins if your team is comfortable, such as:
+ - Sentiment Analysis: Analyzes the sentiment of the text (positive, negative, neutral).
+ - Text Summarizer: Provides a summary of the text by extracting key sentences.
+ - Keyword Extractor: Extracts and lists the most common keywords in the text.
+
+Implementation Details
+1. Programming Language: You are free to choose a programming language that supports modularity and dynamic loading. Based on the curriculum we recommend using Python for the tasks.
+2. Sample Project Structure:
+ - core/: Contains the core module.
+ - plugins/: Contains individual plugin implementations.
+3. Core Functionality:
+ - The core should expose an interface for plugins to interact with the text.
+ - Use a simple registration mechanism where plugins register themselves with the core on startup.
+4. Plugin Development:
+ - Each plugin should be developed as an independent module. Plugins must implement a common interface (e.g., process(text: str) -> str) to ensure compatibility with the core.
+
+Category: Core Functionality	
+Weight: 40%	
+Criteria: Correct implementation of file reading/writing, plugin management, and menu navigation.
+
+
+Category: Plugin Implementation	
+Weight: 40%	
+Criteria: At least three plugins implemented correctly, demonstrating different processing capabilities.
+
+Category: Microkernel Architecture	
+Weight: 20%	
+Criteria: Effective use of the microkernel architecture, showing clear separation between core and plugins.
+
+Submission Guidelines
+Submit the proof of concept implementation as a zipped folder, including a README file that explains how to run your tool and a brief description of the plugins you implemented.
