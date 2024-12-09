@@ -40,11 +40,11 @@ A text processing tool built using the Microkernel architecture. This tool dynam
 ## How to Run
 1. Ensure your text file is in the project directory or provide the full path to the file during the file selection process.
 2. Run the application by executing the following command:
-   python main.py 
+   **python main.py**
    
    or
    
-   python3 main.py
+   **python3 main.py**
 
 3. Follow the prompts to:
 - Select a text file.
