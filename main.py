@@ -5,14 +5,14 @@ def main():
     core.load_plugins()
 
     print("Welcome to the Text Processing Tool")
-    file_path = input("Enter the path of the text file to process: ")
+    file_path = input("Enter the path of the file to process: ")
     text = core.read_file(file_path)
 
     while True:
         print("\n--- Menu ---")
-        core.show_plugins()
+        core.list_plugins()
         print("0 - Exit")
-        choice = input("Choose a plugin (or 0 to exit): ")
+        choice = input("Choose a plugin (or enter 0 to exit): ")
 
         if choice == "0":
             break

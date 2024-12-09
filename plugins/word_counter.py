@@ -1,8 +1,7 @@
 class Plugin:
     """
-    Counts the number of words in the given text.
+    Counts the number of words in a given text.
     """
-
     def process(self, text):
-        words = text.split()
-        return f"Word count: {len(words)}"
+        word_count = len(text.split())
+        return f"Word count: {word_count}"
