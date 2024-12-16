@@ -1,0 +1,146 @@
+A robust foundation is a key for developing innovative and sophisticated software that proves to be a product-market fit and solves problems for users. Did you work on projects that seemed to have become infeasible to iterate on after the first few rounds of development? Projects that turned legacy before getting even an opportunity to take the second breath of air? Here, the importance of software architecture comes into the picture. It matters; it always has.
+
+In the software industry, when people talk about ‘software,’ they refer to a very vague notion of the most crucial part of the internal design of a software system. And there lie certain factors that have been contributing to this foundation, such as — mutual understanding between software architects and designers, the right design decisions, and easily comprehensible code.
+
+What Is Software Architecture?
+A big part of our daily lives, from using a smartphone to sending an email, depends heavily on the software architecture of systems we use. Without it, so much of what we use and what we know would not be possible at all. Software architecture is what brings innovation to an organization.
+
+The Definition
+The definition of software architecture has long been argued. For some people, it’s the way essential compounds are wired together or the fundamental organization of a system. In this regard, the abstract concept proposed by Ralph Johnson, Associate Professor, University of Illinois, is something noteworthy: “Architecture is about the important stuff. Whatever that is.”
+
+When first heard, it might sound trite. But I think it has a lot of richness and depth. Software architecture refers to the highest-level framework, the skeleton of the software system. It’s one of the very first choices made for the bedrock of the system. That choice can significantly influence the flow of work, quality of the code, maintenance, deployment, and ease of development.
+
+Primarily, software architecture is based on a set of crucial decisions related to software development. Each of these decisions has a considerable impact on the overall success and performance of the final product. The decision consists of -
+
+Selection of structural components and their interfaces
+Behavior as stated in collaborations in between those components
+Configuration of those structural and behavioral components into a substantial subsystem
+Architectural decisions following business requirements
+Is Software Architecture The Same Thing As Software System Design?
+Although most people believe software architecture and software design are different, fundamentally, it’s the same thing. The division has come from the notion that software system design is the low-level details, whereas software architecture is the high-level details.
+
+Without the knowledge of high-level details, a developer might work on low-level details, but the opposite isn’t possible. An architect of a system needs to fully understand how their high-level decisions will influence the low-level details.
+
+Besides, software design is one of the initial phases of the Software Development Cycle (SDLC). It gives detailed data to developers for implementing compatible software.
+
+Here is a sneak-peak at Software Development Life Cycle Methodologies for your reference!
+
+On the other hand, software architecture is a plan that constrains software system design to avoid typical mistakes. It achieves technology and business strategy for one organization.
+
+In a nutshell, how you’re building is software design and what you’re building is software architecture.
+
+Why Does Software Architecture Matter?
+Software architecture is designed for a specified reason — it’s all about identifying the components that will be directly responsible for the success or failure of our system and creating the system to serve and protect those essential components. An organized system architecture design helps in maintaining the internal quality that further improves the software.
+
+In Netflix, it’s their microservice architecture that empowers them to manage availability, whereas, in Salesforce or Google, it’s a domain-driven design that helps them run domain logic complexity.
+
+Let’s understand this with the following examples.
+
+Suppose two similar products have been launched within the gap of a month. After three months, they require new features to be added.
+
+Now, two scenarios are there.
+
+Launch — 31st May: The code is messy and tangled. The users have nothing to do with it but tracing the scope of change and incorporating it has become tricky.
+Launch — 30th June: The code is perfectly organized. Users have nothing to do with it, but the software development team can easily handle and implement the changes.
+Under such circumstances, what would a software development company choose to do?
+
+Usually, despite the messy code blocks, the team would go for an earlier launch as that’s what would matter for the time being — the quicker the launch, the better opportunities to monopolize the market.
+
+However, in the second scenario, the changes would take time as quality performance and quality code have been given equal importance. This would disturb time-to-market unfavorably.
+
+But, a well-defined system architecture design in the form of microservices will help in easier maintenance. Not only will your company save time, but it will also satisfy the users with fast and regular updates.
+
+Conclusion: The messy and tangled code may have brought it sooner to the market but will demand more than required to include the new changes. On the contrary, the organized code may have suffered from a postponed launch but ultimately will deliver spot-on and timely updates.
+
+
+Source: martinfowler.com
+Software Architecture Patterns
+Think about a software development project for designing an online shopping app. The foremost important thing you need is to define its programming architecture and design to build this app. These are the foundation pillars upon which your app is going to be built. For example, how will the algorithm function for product suggestions? How will the shopping cart work? The list continues.
+
+Software architecture patterns can be defined as solutions to mainstream and recurring software engineering problems. In the online shopping app, we can again use algorithms that have already been established to suggest products and make tweaks as per the demands of our app. The architecture included in the implementation of the suggestions module is only a part of the overall architectural pattern.
+
+Even a few years ago, the established patterns to solve these issues were very limited. However, today, with the advancement and evolution of software development, we have got a handful of programming architecture models suitable for different app types.
+
+P.S. Check out this comprehensive guide for a successful software development project!
+
+Now, it’s time to check out the 5 most common software architecture patterns.
+
+1. Layered Architecture Pattern
+This pattern is one of the widely used architectural patterns in the software industry for its easy-to-develop-and-maintain feature. As the name suggests, it follows a tiered approach wherein the code is organized in layers. This pattern is used to structure programs that can be broken down into groups of subtasks, each at a specified level of abstraction. Each layer here provides services to the higher layer.
+
+In a general information system, these 4 are the most used layers:
+
+Presentation Layer or UI Layer
+Application Layer or Service Layer
+Business Logic Layer or Domain Layer
+Data Access Layer or Persistence Layer
+
+Source: herbertograca.com
+Best Usage
+Customary line-of-business apps that function more than CRUD operations
+Standard apps for quick development with fewer and inexperienced developers
+Apps with strict testability and maintainability standards
+2. Microkernel Architecture Pattern
+This pattern is best suited for apps that need to be adaptive and flexible enough to frequently changing system requirements. It’s separated into an extended functionality (plug-ins) and a minimal functional core. The core system comprises standard business logic without any custom code for complex conditional processes or exceptional cases.
+
+On the other hand, the plug-ins consist of independent components that support the core by offering specialized processing added features through custom code. The microkernel works like a socket for these plug-ins to increase its potential and functionality.
+
+
+Source: O’Reilly
+Best Usage
+Task and job scheduling apps
+Workflow apps
+Apps that incorporate data from various sources, transform the data and send it to different destinations
+3. Microservices Architecture Pattern
+This pattern approaches the building of multiple small and independent apps that work together under an entire system. Each app or microservice has its own responsibility, and the only dependence between them is to communicate.
+
+As a viable alternative to monolithic architecture patterns, microservices have gained popularity and importance. It’s organized as several loosely coupled services, and when you’ll work with it, ensure messages exchange between them stay backward-compatible.
+
+
+Source: XenonStack
+Best Usage
+Fast developing web and business apps
+Corporate data hubs with well-established boundaries
+Websites with small components
+Development teams that are scattered around the globe
+4. Event-based Architecture Pattern
+This is the most commonly allocated asynchronous architecture pattern for developing highly scalable systems. Its approach is based on data that defines ‘events’, such as moving the scroll bar, clicking a button, etc., and processes them asynchronously.
+
+An event-based pattern involves single-purpose event processing elements that build a central unit. The central unit then accepts all data and assigns it to separate modules handling the specific type.
+
+
+Source: Hazelcast
+Best Usage
+User interfaces
+Apps that have asynchronous data flow
+Complex apps that require seamless data flow and would eventually grow
+5. Space-based Architecture Pattern
+The space-based pattern has particularly been designed for addressing and solving concurrency and scalability issues. It also proves to be useful for apps that have unpredictable and variant concurrent user volumes. Here, high scalability is accomplished by eliminating the central database constraint and utilizing copied in-memory data grids.
+
+This pattern is designed to eliminate the chances of functional collapse under high load by separating the storage and the processing between several servers.
+
+
+Source: O’Reilly
+Best Usage
+Social networks
+High-volume data such as user logs and clickstreams
+Low-value data that can be occasionally lost without much impact
+What Makes A Good Software Architecture?
+An efficient programming architecture has a set of quality attributes as mentioned below:
+
+Functionality: Refers to the extent the software performs against its needed purposes.
+Usability: Refers to the level the software can be used with ease and convenience.
+Reliability: Refers to the capability of the product to provide intended functionality under given circumstances.
+Supportability: Refers to the facility with which developers can transfer the software from one platform to another with minimal or no changes.
+Performance: Refers to the approximation by considering resource utilization, processing speed, response time, productivity, and throughput.
+Self-Reliance: refers to the capability of independent activities for optimal performance even if one is going through a downtime.
+Wrapping Up!
+In conclusion, architecture is the root of effective software that helps maintain the quality of the product and make management easy and effortless throughout its lifetime. Conclusively, it proves to be profitable in the long run as it’s easier and more convenient to modify. This saves developers’ time and effort while serving changing requirements of the customers.
+
+But, there lies a challenge. Nobody can get it right in the first place, and even the best software development project faces hurdles. Yet, on the brighter side, a team of deft professionals can identify and eliminate them in time to create scalable solutions.
+
+So, is it necessary to avail software architecture consulting services?
+
+Absolutely yes! And Radixweb has a team of agile-driven professionals who have excelled in acquiring the best architectural approaches for software development projects.
+
+Choose wisely!
