@@ -11,11 +11,11 @@ class Core:
 
     def load_plugins(self):
         """
-        Dynamically loads plugins from the 'plugins' directory without relying on __init__.py.
+        Dynamically loads plugins from the 'plugins' directory.
         """
         plugin_directory = os.path.join(os.path.dirname(__file__), "../plugins")
         for file in os.listdir(plugin_directory):
-            if file.endswith(".py") and file != "__init__.py":
+            if file.endswith(".py"):
                 plugin_name = file[:-3]
                 plugin_path = os.path.join(plugin_directory, file)
                 try:

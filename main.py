@@ -33,12 +33,31 @@ def main():
     """
     # List text files in the current directory
     text_files = [file for file in os.listdir('.') if file.endswith('.txt')]
-    if not text_files:
-        print("No text files found in the current directory.")
+    print("\nHow would you like to select your file?")
+    print("1 - Choose from available text files in the current directory")
+    print("2 - Enter the full file path manually")
+    print("0 - Exit")
+
+    try:
+        file_choice = int(input("Enter your choice (0, 1, or 2): ").strip())
+        if file_choice == 0:
+            print("Exiting the program.")
+            return
+        elif file_choice == 1:
+            if not text_files:
+                print("No text files found in the current directory.")
+                return
+            list_items(text_files, "text file")
+            file_path = choose_item(text_files, "text file")
+        elif file_choice == 2:
+            file_path = input("Enter the full path to your text file: ").strip()
+        else:
+            print("Invalid choice. Exiting.")
+            return
+    except ValueError:
+        print("Invalid input. Exiting.")
         return
 
-    list_items(text_files, "text file")
-    file_path = choose_item(text_files, "text file")
     if not file_path:
         print("No file selected. Exiting.")
         return
